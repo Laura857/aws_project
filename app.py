@@ -10,9 +10,9 @@ app = Flask(__name__)
 def hello_world():
     return render_template("index.html")
 
-@app.route('/iam/<relationshipType>/at/<relationshipDate>', methods=['POST'])
-def showFram(relationshipType, relationshipDate):
-    return relationship(relationshipType, relationshipDate)
+@app.route('/iam', methods=['GET'])
+def showFram():
+    return relationship(request.args.get("relationshipType"), request.args.get("relationshipDate"))
 
 def relationship(relationshipType : str, relationshipDate: str):
     now = datetime.now()
@@ -39,3 +39,6 @@ def relationship(relationshipType : str, relationshipDate: str):
     response = json.dumps(value)
     print(response)
     return response
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',port=5000)
