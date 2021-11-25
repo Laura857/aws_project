@@ -34,6 +34,8 @@ Ce ws retourne un json de frames à afficher pour le réveil Lametric :
     ]
 }
 ```
+<img src=https://github.com/Laura857/lovelife/blob/main/static/image/love.png width="200">  <img src=https://github.com/Laura857/lovelife/blob/main/static/image/sex.png width="195"> <br>
+<img src=https://github.com/Laura857/lovelife/blob/main/static/image/single.png width="200">  <img src=https://github.com/Laura857/lovelife/blob/main/static/image/matchs.png width="208">
 
 Pour les tester exécutez les commandes suivantes :   
 ```cd lovelife```   
